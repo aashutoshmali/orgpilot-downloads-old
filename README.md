@@ -44,6 +44,10 @@ If you work on Salesforce, your day probably looks like this:
 ### 🗂️ Work in all your orgs at once
 - Log in to as many orgs as you like (production, Developer Edition, sandboxes, My Domain), including orgs with multi-factor authentication.
 - Each org keeps its own session, colour and tab bar. Opening a page that's already open just switches to it.
+- Your tabs reopen when you start OrgPilot again. Pin the ones you always need, drag tabs to reorder them, and right-click a tab for more.
+- **Side by side:** click **Split** to show a second page, from the same or another org, next to the current one. Perfect for comparing a sandbox with production.
+- **Favorites:** click ☆ on any record, list, report, Setup page or tool. Your favorites from every org are one click away in Explore → Favorites and in Ctrl/Cmd + K.
+- OrgPilot updates itself: when a new version is out you'll see a short note at the top.
 - Tabs you haven't used for a while go to sleep to save memory, and wake up when you click them.
 - Optional banner per org (for example "PRODUCTION: careful") so you always know where you are.
 
@@ -68,13 +72,35 @@ Read debug logs as a summary (limits used, queries, DML, errors, slowest code) o
 - **Retrieve & Deploy**: pick components, download them as a package, validate or deploy, even from one org to another.
 - **Create Fields**: create one field or dozens at once, and grant access through permission sets.
 
+### 🧪 Run Apex and tests
+Run anonymous Apex and see your debug output straight away, then run test classes and check code coverage, per class and for the whole org.
+
+### 🔀 Org Compare
+Compare Apex, flows, fields, validation rules, permission sets and more between two orgs. See what's different, what's only in one org, and a line-by-line comparison. Then validate or deploy the changes from one org to the other.
+
+### 🩺 Org Health Scan
+One click checks unused licences, Salesforce's security Health Check, who can see or change all data, flow problems, old Workflow Rules and Process Builders, Apex test coverage, and storage and API limits, with links to fix each one.
+
+### 🕵️ Setup Audit Trail
+See who changed what in Setup and when, for one org or all your orgs together, with filters and export.
+
 ### 👥 Users and org details
 Find any user, log in as them, reset their password, freeze or unfreeze them, and see their permission sets. View org details and limits at a glance. Call any Salesforce API from the REST Explorer.
 
 ### ✨ AI co-pilot
 Ask questions about your org in plain English: *"How many leads were created this week?"*, *"Why is this flow failing?"*, *"Describe the Opportunity object."* The AI looks things up in your org before answering, can write SOQL for you, and only talks about Salesforce.
 
-Bring your own AI: Groq (free tier available), OpenAI, OpenRouter, Anthropic, or a model running on your own computer. You add your key once in Settings, and it is stored encrypted.
+**One sign-in, every major model:** click **Sign in with OpenRouter** in Settings → AI and you can use ChatGPT, Claude, Gemini, DeepSeek, Llama and 400+ other models, with no API keys to copy. You start on a free model and can switch anytime; paid models are billed by OpenRouter. Prefer your own key (Groq, OpenAI, Anthropic) or a model on your own computer? That's under *Advanced*.
+
+Just ask, and OrgPilot does it in your current org:
+
+| You type | OrgPilot |
+|---|---|
+| *"Show open opportunities over 50k closing this quarter"* | Writes the SOQL, runs it and shows the results with the query |
+| *"Scan my flows for problems"* | Runs the Flow Scanner and lists what to fix first |
+| *"Why did the last Apex job fail?"* | Reads recent debug logs, finds the errors and explains them |
+| *"Open the newest Account"* | Opens the record in a tab |
+| *"Set the Industry of Acme to Energy"* | Shows old and new value and waits for your approval |
 
 ---
 
@@ -116,7 +142,7 @@ Get the latest version from the **[Releases page](https://github.com/aashutoshma
 2. Choose Production or Sandbox, type your username, and log in on the Salesforce page that appears. Click **Allow**.
 3. Your org appears in the sidebar and opens its home page. Add as many orgs as you like.
 4. Press **Ctrl/Cmd + K** to jump anywhere, or open the **Explore** panel on the right for all the tools.
-5. Optional: add an AI key in **Settings → AI** to use the AI co-pilot.
+5. Optional: open the **AI** panel and click **Sign in with OpenRouter** to switch on the AI co-pilot (free models available).
 
 ---
 
@@ -150,7 +176,7 @@ OrgPilot is free. If it saves you time, you can buy me a coffee. It helps keep n
 
 **OrgPilot** · Developed by **[Aashutosh Mali](https://www.linkedin.com/in/aashutoshmali/)** · [LinkedIn](https://www.linkedin.com/in/aashutoshmali/) · [Email](mailto:aashutosh.smali@gmail.com)
 
-© 2026 OrgPilot · [Privacy Policy](https://orgpilot.aashutosh-smali.workers.dev/privacy.html) · [Terms of Use](https://orgpilot.aashutosh-smali.workers.dev/terms.html)
+© 2026 OrgPilot · [Privacy Policy](https://orgpilot.aashutosh-smali.workers.dev/privacy) · [Terms of Use](https://orgpilot.aashutosh-smali.workers.dev/terms) · [Third-party notices](THIRD_PARTY_NOTICES.md)
 
 <sub>Salesforce is a trademark of Salesforce, Inc. OrgPilot is not affiliated with Salesforce, Inc.</sub>
 
