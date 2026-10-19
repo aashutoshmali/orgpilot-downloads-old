@@ -103,7 +103,7 @@ Bring your own AI: Groq (free tier available), OpenAI, OpenRouter, Anthropic, or
 | Windows 10 / 11 | `OrgPilot-windows-x64-setup.exe` (or the `.zip`, which needs no installation) |
 | Linux | `OrgPilot-linux-x64.AppImage` or `.deb` for Debian/Ubuntu |
 
-Get the latest version from the **Releases** page or the OrgPilot website.
+Get the latest version from the **[Releases page](https://github.com/aashutoshmali/orgpilot-downloads/releases/latest)** or the [OrgPilot website](https://orgpilot.aashutosh-smali.workers.dev).
 
 **First launch:** OrgPilot isn't signed by Apple or Microsoft yet, so your computer may warn you once.
 - **Mac:** open the app, then go to System Settings → Privacy & Security and click **Open Anyway**.
